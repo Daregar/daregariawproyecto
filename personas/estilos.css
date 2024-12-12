@@ -1,0 +1,110 @@
+:root {
+    --main-color: 120; /* Cambiado a un tono verde */
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hwb(var(--main-color) 90% 5%);
+    color: #333; /* Texto principal en gris oscuro */
+    font-family: Arial, sans-serif; /* Cambio de fuente */
+}
+
+h1 {
+    margin: 0;
+    padding: 15px 20px; /* Añadir más relleno */
+    background-color: hwb(var(--main-color) 40% 20%);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center; /* Centrando el título */
+}
+
+nav {
+    margin: 0;
+    background-color: hwb(var(--main-color) 50% 10%);
+    color: white;
+    padding: 10px 0; /* Añadir relleno */
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center; /* Centrando los elementos del menú */
+}
+
+nav li {
+    display: inline-block; /* Usar bloque en línea para control de relleno */
+    padding: 0 20px; /* Espacio entre elementos */
+}
+
+nav a {
+    background-color: transparent; /* Transparente para fondo de nav */
+    color: white;
+    font-weight: bold;
+    text-decoration: none; /* Eliminar subrayado */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Añadir subrayado en hover */
+}
+
+main {
+    padding: 20px; /* Más relleno para main */
+    background-color: hwb(var(--main-color) 95% 0%); /* Fondo claro para el contenido principal */
+    color: #333; /* Texto principal en gris oscuro */
+}
+
+input {
+    font-family: monospace;
+}
+
+.boton-invisible {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+.aviso {
+    color: red;
+}
+
+.centrado {
+    text-align: center;
+}
+
+a img {
+    border: none;
+}
+
+table.conborde,
+table.conborde td,
+table.conborde th {
+    border: #333 1px solid;
+}
+
+thead tr,
+table.franjas tbody tr:nth-child(even) {
+    background-color: hwb(var(--main-color) 60% 30%);
+    color: white;
+}
+
+td,
+th {
+    padding: 10px; /* Aumentar relleno en celdas */
+}
+
+footer {
+    clear: both;
+    margin: 30px 20px 0;
+    border-top: #333 solid 1px;
+    text-align: center; /* Centra el texto del pie de página */
+    padding: 20px; /* Añadir más espacio interior al pie de página */
+    background-color: hwb(var(--main-color) 50% 20%); /* Consistente con el diseño de navegación */
+    color: white; /* Color de texto blanco para contraste */
+}
+
+footer cite {
+    font-weight: bold;
+}
